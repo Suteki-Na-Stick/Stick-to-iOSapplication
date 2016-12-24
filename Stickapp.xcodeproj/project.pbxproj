@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ACF1F8B11F6A68542D07807 /* Pods_Stickapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4C271D06074074A000DBC1 /* Pods_Stickapp.framework */; };
+		C40130AC1CBD5AD300897B38 /* settings_black_54x54.png in Resources */ = {isa = PBXBuildFile; fileRef = C40130AB1CBD5AD300897B38 /* settings_black_54x54.png */; };
+		C40130AE1CBF7D2A00897B38 /* map_black_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = C40130AD1CBF7D2A00897B38 /* map_black_48x48.png */; };
+		C40BAF761CC2029200B284F7 /* コントローラーアイコン1.png in Resources */ = {isa = PBXBuildFile; fileRef = C40BAF751CC2029200B284F7 /* コントローラーアイコン1.png */; };
+		C40BAF781CC2032F00B284F7 /* 株価グラフのアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = C40BAF771CC2032F00B284F7 /* 株価グラフのアイコン.png */; };
+		C444AFE81CBD452400794D01 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C444AFE71CBD452400794D01 /* MessageUI.framework */; };
+		C445F1D81CBAC6D80009F696 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C445F1D71CBAC6D80009F696 /* Charts.framework */; };
+		C445F1DA1CBAC6E60009F696 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C445F1D91CBAC6E60009F696 /* CoreLocation.framework */; };
+		C4C46AA91CBA532200344E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C46AA81CBA532200344E86 /* AppDelegate.swift */; };
+		C4C46AAB1CBA532200344E86 /* StatusV_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C46AAA1CBA532200344E86 /* StatusV_ViewController.swift */; };
+		C4C46AAE1CBA532200344E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AAC1CBA532200344E86 /* Main.storyboard */; };
+		C4C46AB01CBA532200344E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AAF1CBA532200344E86 /* Assets.xcassets */; };
+		C4C46AB31CBA532200344E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AB11CBA532200344E86 /* LaunchScreen.storyboard */; };
+		C4C46ABE1CBA532200344E86 /* StickappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C46ABD1CBA532200344E86 /* StickappTests.swift */; };
+		C4C46AC91CBA532200344E86 /* StickappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C46AC81CBA532200344E86 /* StickappUITests.swift */; };
+		C4C46AE11CBA549500344E86 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C46ADE1CBA549500344E86 /* OpenEars.framework */; };
+		C4C46AE21CBA549500344E86 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C46ADF1CBA549500344E86 /* Slt.framework */; };
+		C4C46AE41CBA54AA00344E86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C46AE31CBA54AA00344E86 /* AVFoundation.framework */; };
+		C4C46AE61CBA54C800344E86 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C46AE51CBA54C800344E86 /* AudioToolbox.framework */; };
+		C4C46AF41CBA559300344E86 /* MAIC.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AE81CBA559300344E86 /* MAIC.png */; };
+		C4C46AF51CBA559300344E86 /* Mems-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AE91CBA559300344E86 /* Mems-Logo.png */; };
+		C4C46AF61CBA559300344E86 /* Mems-poster.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AEA1CBA559300344E86 /* Mems-poster.png */; };
+		C4C46AF71CBA559300344E86 /* mic_black_108x108.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AEB1CBA559300344E86 /* mic_black_108x108.png */; };
+		C4C46AF81CBA559300344E86 /* mic_black_144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AEC1CBA559300344E86 /* mic_black_144x144.png */; };
+		C4C46AF91CBA559300344E86 /* mic_white_144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AED1CBA559300344E86 /* mic_white_144x144.png */; };
+		C4C46AFA1CBA559300344E86 /* vec_buttonImage _d.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AEE1CBA559300344E86 /* vec_buttonImage _d.png */; };
+		C4C46AFB1CBA559300344E86 /* vec_buttonImage _r.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AEF1CBA559300344E86 /* vec_buttonImage _r.png */; };
+		C4C46AFC1CBA559300344E86 /* vec_buttonImage_l .png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AF01CBA559300344E86 /* vec_buttonImage_l .png */; };
+		C4C46AFD1CBA559300344E86 /* vec_buttonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AF11CBA559300344E86 /* vec_buttonImage.png */; };
+		C4C46AFE1CBA559300344E86 /* マイクのアイコンその10.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AF21CBA559300344E86 /* マイクのアイコンその10.png */; };
+		C4C46AFF1CBA559300344E86 /* マイクのアイコン素材 その3.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C46AF31CBA559300344E86 /* マイクのアイコン素材 その3.png */; };
+		C4C46B341CBA57B800344E86 /* VoiceRe_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C46B331CBA57B800344E86 /* VoiceRe_ViewController.swift */; };
+		C4C46B361CBA57F900344E86 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C46B351CBA57F900344E86 /* MapsViewController.swift */; };
+		C4E9A07C1CBF94DD009F3190 /* SettingViewConteroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9A07B1CBF94DD009F3190 /* SettingViewConteroller.swift */; };
+		C4E9A07D1CBFD629009F3190 /* AcousticModelEnglish.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C46ADD1CBA549500344E86 /* AcousticModelEnglish.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4C46ABA1CBA532200344E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4C46A9D1CBA532200344E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4C46AA41CBA532200344E86;
+			remoteInfo = Stickapp;
+		};
+		C4C46AC51CBA532200344E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4C46A9D1CBA532200344E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4C46AA41CBA532200344E86;
+			remoteInfo = Stickapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A5A161733349BF470169350 /* Pods-Stickapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stickapp/Pods-Stickapp.debug.xcconfig"; sourceTree = "<group>"; };
+		A22BFFA28EDE0FD5EFA427D9 /* Pods-Stickapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stickapp/Pods-Stickapp.release.xcconfig"; sourceTree = "<group>"; };
+		AB4C271D06074074A000DBC1 /* Pods_Stickapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stickapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40130AB1CBD5AD300897B38 /* settings_black_54x54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings_black_54x54.png; path = images/settings_black_54x54.png; sourceTree = "<group>"; };
+		C40130AD1CBF7D2A00897B38 /* map_black_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_black_48x48.png; path = images/map_black_48x48.png; sourceTree = "<group>"; };
+		C40BAF751CC2029200B284F7 /* コントローラーアイコン1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "コントローラーアイコン1.png"; path = "images/コントローラーアイコン1.png"; sourceTree = "<group>"; };
+		C40BAF771CC2032F00B284F7 /* 株価グラフのアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "株価グラフのアイコン.png"; path = "images/株価グラフのアイコン.png"; sourceTree = "<group>"; };
+		C444AFE71CBD452400794D01 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C445F1D71CBAC6D80009F696 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../Library/Developer/Xcode/DerivedData/Stickapp-aebmagtkhrxerzgxadtfnxhhecze/Build/Products/Debug-iphonesimulator/Charts.framework"; sourceTree = "<group>"; };
+		C445F1D91CBAC6E60009F696 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C4C46AA51CBA532200344E86 /* Stickapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stickapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C46AA81CBA532200344E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4C46AAA1CBA532200344E86 /* StatusV_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusV_ViewController.swift; sourceTree = "<group>"; };
+		C4C46AAD1CBA532200344E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4C46AAF1CBA532200344E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4C46AB21CBA532200344E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4C46AB41CBA532200344E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C46AB91CBA532200344E86 /* StickappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C46ABD1CBA532200344E86 /* StickappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickappTests.swift; sourceTree = "<group>"; };
+		C4C46ABF1CBA532200344E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C46AC41CBA532200344E86 /* StickappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C46AC81CBA532200344E86 /* StickappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickappUITests.swift; sourceTree = "<group>"; };
+		C4C46ACA1CBA532200344E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C46AD61CBA538800344E86 /* Stickapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stickapp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		C4C46ADD1CBA549500344E86 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AcousticModelEnglish.bundle; path = Stickapp/Framework/AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		C4C46ADE1CBA549500344E86 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenEars.framework; path = Stickapp/Framework/OpenEars.framework; sourceTree = "<group>"; };
+		C4C46ADF1CBA549500344E86 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Slt.framework; path = Stickapp/Framework/Slt.framework; sourceTree = "<group>"; };
+		C4C46AE31CBA54AA00344E86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C4C46AE51CBA54C800344E86 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C4C46AE81CBA559300344E86 /* MAIC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MAIC.png; path = images/MAIC.png; sourceTree = "<group>"; };
+		C4C46AE91CBA559300344E86 /* Mems-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mems-Logo.png"; path = "images/Mems-Logo.png"; sourceTree = "<group>"; };
+		C4C46AEA1CBA559300344E86 /* Mems-poster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mems-poster.png"; path = "images/Mems-poster.png"; sourceTree = "<group>"; };
+		C4C46AEB1CBA559300344E86 /* mic_black_108x108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mic_black_108x108.png; path = images/mic_black_108x108.png; sourceTree = "<group>"; };
+		C4C46AEC1CBA559300344E86 /* mic_black_144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mic_black_144x144.png; path = images/mic_black_144x144.png; sourceTree = "<group>"; };
+		C4C46AED1CBA559300344E86 /* mic_white_144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mic_white_144x144.png; path = images/mic_white_144x144.png; sourceTree = "<group>"; };
+		C4C46AEE1CBA559300344E86 /* vec_buttonImage _d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "vec_buttonImage _d.png"; path = "images/vec_buttonImage _d.png"; sourceTree = "<group>"; };
+		C4C46AEF1CBA559300344E86 /* vec_buttonImage _r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "vec_buttonImage _r.png"; path = "images/vec_buttonImage _r.png"; sourceTree = "<group>"; };
+		C4C46AF01CBA559300344E86 /* vec_buttonImage_l .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "vec_buttonImage_l .png"; path = "images/vec_buttonImage_l .png"; sourceTree = "<group>"; };
+		C4C46AF11CBA559300344E86 /* vec_buttonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vec_buttonImage.png; path = images/vec_buttonImage.png; sourceTree = "<group>"; };
+		C4C46AF21CBA559300344E86 /* マイクのアイコンその10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "マイクのアイコンその10.png"; path = "images/マイクのアイコンその10.png"; sourceTree = "<group>"; };
+		C4C46AF31CBA559300344E86 /* マイクのアイコン素材 その3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "マイクのアイコン素材 その3.png"; path = "images/マイクのアイコン素材 その3.png"; sourceTree = "<group>"; };
+		C4C46B331CBA57B800344E86 /* VoiceRe_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceRe_ViewController.swift; sourceTree = "<group>"; };
+		C4C46B351CBA57F900344E86 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		C4E9A07B1CBF94DD009F3190 /* SettingViewConteroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewConteroller.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4C46AA21CBA532200344E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E9A07D1CBFD629009F3190 /* AcousticModelEnglish.bundle in Frameworks */,
+				C444AFE81CBD452400794D01 /* MessageUI.framework in Frameworks */,
+				C445F1DA1CBAC6E60009F696 /* CoreLocation.framework in Frameworks */,
+				C445F1D81CBAC6D80009F696 /* Charts.framework in Frameworks */,
+				C4C46AE61CBA54C800344E86 /* AudioToolbox.framework in Frameworks */,
+				C4C46AE41CBA54AA00344E86 /* AVFoundation.framework in Frameworks */,
+				C4C46AE11CBA549500344E86 /* OpenEars.framework in Frameworks */,
+				C4C46AE21CBA549500344E86 /* Slt.framework in Frameworks */,
+				7ACF1F8B11F6A68542D07807 /* Pods_Stickapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C46AB61CBA532200344E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C46AC11CBA532200344E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		018F44C8669FF7B53280EB6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C444AFE71CBD452400794D01 /* MessageUI.framework */,
+				C445F1D91CBAC6E60009F696 /* CoreLocation.framework */,
+				C445F1D71CBAC6D80009F696 /* Charts.framework */,
+				AB4C271D06074074A000DBC1 /* Pods_Stickapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0135FD7AC112F1D29769E5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A161733349BF470169350 /* Pods-Stickapp.debug.xcconfig */,
+				A22BFFA28EDE0FD5EFA427D9 /* Pods-Stickapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4C46A9C1CBA532200344E86 = {
+			isa = PBXGroup;
+			children = (
+				C4C46AE51CBA54C800344E86 /* AudioToolbox.framework */,
+				C4C46AE31CBA54AA00344E86 /* AVFoundation.framework */,
+				C4C46ADD1CBA549500344E86 /* AcousticModelEnglish.bundle */,
+				C4C46ADE1CBA549500344E86 /* OpenEars.framework */,
+				C4C46ADF1CBA549500344E86 /* Slt.framework */,
+				C4C46AA71CBA532200344E86 /* Stickapp */,
+				C4C46ABC1CBA532200344E86 /* StickappTests */,
+				C4C46AC71CBA532200344E86 /* StickappUITests */,
+				C4C46AA61CBA532200344E86 /* Products */,
+				A0135FD7AC112F1D29769E5F /* Pods */,
+				018F44C8669FF7B53280EB6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4C46AA61CBA532200344E86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4C46AA51CBA532200344E86 /* Stickapp.app */,
+				C4C46AB91CBA532200344E86 /* StickappTests.xctest */,
+				C4C46AC41CBA532200344E86 /* StickappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4C46AA71CBA532200344E86 /* Stickapp */ = {
+			isa = PBXGroup;
+			children = (
+				C4C46AE71CBA557700344E86 /* image */,
+				C4C46AA81CBA532200344E86 /* AppDelegate.swift */,
+				C4C46AAA1CBA532200344E86 /* StatusV_ViewController.swift */,
+				C4C46AAC1CBA532200344E86 /* Main.storyboard */,
+				C4C46AD61CBA538800344E86 /* Stickapp-Bridging-Header.h */,
+				C4C46AAF1CBA532200344E86 /* Assets.xcassets */,
+				C4C46AB11CBA532200344E86 /* LaunchScreen.storyboard */,
+				C4C46AB41CBA532200344E86 /* Info.plist */,
+				C4C46B331CBA57B800344E86 /* VoiceRe_ViewController.swift */,
+				C4C46B351CBA57F900344E86 /* MapsViewController.swift */,
+				C4E9A07B1CBF94DD009F3190 /* SettingViewConteroller.swift */,
+			);
+			path = Stickapp;
+			sourceTree = "<group>";
+		};
+		C4C46ABC1CBA532200344E86 /* StickappTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4C46ABD1CBA532200344E86 /* StickappTests.swift */,
+				C4C46ABF1CBA532200344E86 /* Info.plist */,
+			);
+			path = StickappTests;
+			sourceTree = "<group>";
+		};
+		C4C46AC71CBA532200344E86 /* StickappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4C46AC81CBA532200344E86 /* StickappUITests.swift */,
+				C4C46ACA1CBA532200344E86 /* Info.plist */,
+			);
+			path = StickappUITests;
+			sourceTree = "<group>";
+		};
+		C4C46AE71CBA557700344E86 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				C40BAF771CC2032F00B284F7 /* 株価グラフのアイコン.png */,
+				C40BAF751CC2029200B284F7 /* コントローラーアイコン1.png */,
+				C40130AD1CBF7D2A00897B38 /* map_black_48x48.png */,
+				C40130AB1CBD5AD300897B38 /* settings_black_54x54.png */,
+				C4C46AE81CBA559300344E86 /* MAIC.png */,
+				C4C46AE91CBA559300344E86 /* Mems-Logo.png */,
+				C4C46AEA1CBA559300344E86 /* Mems-poster.png */,
+				C4C46AEB1CBA559300344E86 /* mic_black_108x108.png */,
+				C4C46AEC1CBA559300344E86 /* mic_black_144x144.png */,
+				C4C46AED1CBA559300344E86 /* mic_white_144x144.png */,
+				C4C46AEE1CBA559300344E86 /* vec_buttonImage _d.png */,
+				C4C46AEF1CBA559300344E86 /* vec_buttonImage _r.png */,
+				C4C46AF01CBA559300344E86 /* vec_buttonImage_l .png */,
+				C4C46AF11CBA559300344E86 /* vec_buttonImage.png */,
+				C4C46AF21CBA559300344E86 /* マイクのアイコンその10.png */,
+				C4C46AF31CBA559300344E86 /* マイクのアイコン素材 その3.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4C46AA41CBA532200344E86 /* Stickapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C46ACD1CBA532200344E86 /* Build configuration list for PBXNativeTarget "Stickapp" */;
+			buildPhases = (
+				306579E327C47A7BCE8A1126 /* Check Pods Manifest.lock */,
+				C4C46AA11CBA532200344E86 /* Sources */,
+				C4C46AA21CBA532200344E86 /* Frameworks */,
+				C4C46AA31CBA532200344E86 /* Resources */,
+				20FB02BA62738490E7651193 /* Embed Pods Frameworks */,
+				4294E7A7ADA04FA6D6B1CBDF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickapp;
+			productName = Stickapp;
+			productReference = C4C46AA51CBA532200344E86 /* Stickapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4C46AB81CBA532200344E86 /* StickappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C46AD01CBA532200344E86 /* Build configuration list for PBXNativeTarget "StickappTests" */;
+			buildPhases = (
+				C4C46AB51CBA532200344E86 /* Sources */,
+				C4C46AB61CBA532200344E86 /* Frameworks */,
+				C4C46AB71CBA532200344E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C46ABB1CBA532200344E86 /* PBXTargetDependency */,
+			);
+			name = StickappTests;
+			productName = StickappTests;
+			productReference = C4C46AB91CBA532200344E86 /* StickappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4C46AC31CBA532200344E86 /* StickappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C46AD31CBA532200344E86 /* Build configuration list for PBXNativeTarget "StickappUITests" */;
+			buildPhases = (
+				C4C46AC01CBA532200344E86 /* Sources */,
+				C4C46AC11CBA532200344E86 /* Frameworks */,
+				C4C46AC21CBA532200344E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C46AC61CBA532200344E86 /* PBXTargetDependency */,
+			);
+			name = StickappUITests;
+			productName = StickappUITests;
+			productReference = C4C46AC41CBA532200344E86 /* StickappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4C46A9D1CBA532200344E86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "takeru haysaka";
+				TargetAttributes = {
+					C4C46AA41CBA532200344E86 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z4PJE8V9QU;
+					};
+					C4C46AB81CBA532200344E86 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z4PJE8V9QU;
+						TestTargetID = C4C46AA41CBA532200344E86;
+					};
+					C4C46AC31CBA532200344E86 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z4PJE8V9QU;
+						TestTargetID = C4C46AA41CBA532200344E86;
+					};
+				};
+			};
+			buildConfigurationList = C4C46AA01CBA532200344E86 /* Build configuration list for PBXProject "Stickapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4C46A9C1CBA532200344E86;
+			productRefGroup = C4C46AA61CBA532200344E86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4C46AA41CBA532200344E86 /* Stickapp */,
+				C4C46AB81CBA532200344E86 /* StickappTests */,
+				C4C46AC31CBA532200344E86 /* StickappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4C46AA31CBA532200344E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C46AF91CBA559300344E86 /* mic_white_144x144.png in Resources */,
+				C4C46AB31CBA532200344E86 /* LaunchScreen.storyboard in Resources */,
+				C4C46AB01CBA532200344E86 /* Assets.xcassets in Resources */,
+				C4C46AF51CBA559300344E86 /* Mems-Logo.png in Resources */,
+				C4C46AF61CBA559300344E86 /* Mems-poster.png in Resources */,
+				C4C46AF41CBA559300344E86 /* MAIC.png in Resources */,
+				C4C46AF81CBA559300344E86 /* mic_black_144x144.png in Resources */,
+				C40130AE1CBF7D2A00897B38 /* map_black_48x48.png in Resources */,
+				C4C46AFA1CBA559300344E86 /* vec_buttonImage _d.png in Resources */,
+				C4C46AAE1CBA532200344E86 /* Main.storyboard in Resources */,
+				C40130AC1CBD5AD300897B38 /* settings_black_54x54.png in Resources */,
+				C40BAF781CC2032F00B284F7 /* 株価グラフのアイコン.png in Resources */,
+				C4C46AF71CBA559300344E86 /* mic_black_108x108.png in Resources */,
+				C40BAF761CC2029200B284F7 /* コントローラーアイコン1.png in Resources */,
+				C4C46AFD1CBA559300344E86 /* vec_buttonImage.png in Resources */,
+				C4C46AFB1CBA559300344E86 /* vec_buttonImage _r.png in Resources */,
+				C4C46AFC1CBA559300344E86 /* vec_buttonImage_l .png in Resources */,
+				C4C46AFE1CBA559300344E86 /* マイクのアイコンその10.png in Resources */,
+				C4C46AFF1CBA559300344E86 /* マイクのアイコン素材 その3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C46AB71CBA532200344E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C46AC21CBA532200344E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20FB02BA62738490E7651193 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stickapp/Pods-Stickapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		306579E327C47A7BCE8A1126 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4294E7A7ADA04FA6D6B1CBDF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stickapp/Pods-Stickapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4C46AA11CBA532200344E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C46AAB1CBA532200344E86 /* StatusV_ViewController.swift in Sources */,
+				C4C46B341CBA57B800344E86 /* VoiceRe_ViewController.swift in Sources */,
+				C4C46AA91CBA532200344E86 /* AppDelegate.swift in Sources */,
+				C4E9A07C1CBF94DD009F3190 /* SettingViewConteroller.swift in Sources */,
+				C4C46B361CBA57F900344E86 /* MapsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C46AB51CBA532200344E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C46ABE1CBA532200344E86 /* StickappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C46AC01CBA532200344E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C46AC91CBA532200344E86 /* StickappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4C46ABB1CBA532200344E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4C46AA41CBA532200344E86 /* Stickapp */;
+			targetProxy = C4C46ABA1CBA532200344E86 /* PBXContainerItemProxy */;
+		};
+		C4C46AC61CBA532200344E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4C46AA41CBA532200344E86 /* Stickapp */;
+			targetProxy = C4C46AC51CBA532200344E86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4C46AAC1CBA532200344E86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C46AAD1CBA532200344E86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C46AB11CBA532200344E86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C46AB21CBA532200344E86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4C46ACB1CBA532200344E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4C46ACC1CBA532200344E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4C46ACE1CBA532200344E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A5A161733349BF470169350 /* Pods-Stickapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stickapp/Framework",
+				);
+				INFOPLIST_FILE = Stickapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = irc.mth.Stickapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stickapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4C46ACF1CBA532200344E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22BFFA28EDE0FD5EFA427D9 /* Pods-Stickapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stickapp/Framework",
+				);
+				INFOPLIST_FILE = Stickapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = irc.mth.Stickapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stickapp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		C4C46AD11CBA532200344E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StickappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = irc.mth.StickappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stickapp.app/Stickapp";
+			};
+			name = Debug;
+		};
+		C4C46AD21CBA532200344E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StickappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = irc.mth.StickappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stickapp.app/Stickapp";
+			};
+			name = Release;
+		};
+		C4C46AD41CBA532200344E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StickappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = irc.mth.StickappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Stickapp;
+			};
+			name = Debug;
+		};
+		C4C46AD51CBA532200344E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StickappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = irc.mth.StickappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Stickapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4C46AA01CBA532200344E86 /* Build configuration list for PBXProject "Stickapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C46ACB1CBA532200344E86 /* Debug */,
+				C4C46ACC1CBA532200344E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C46ACD1CBA532200344E86 /* Build configuration list for PBXNativeTarget "Stickapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C46ACE1CBA532200344E86 /* Debug */,
+				C4C46ACF1CBA532200344E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C46AD01CBA532200344E86 /* Build configuration list for PBXNativeTarget "StickappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C46AD11CBA532200344E86 /* Debug */,
+				C4C46AD21CBA532200344E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C46AD31CBA532200344E86 /* Build configuration list for PBXNativeTarget "StickappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C46AD41CBA532200344E86 /* Debug */,
+				C4C46AD51CBA532200344E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4C46A9D1CBA532200344E86 /* Project object */;
+}
